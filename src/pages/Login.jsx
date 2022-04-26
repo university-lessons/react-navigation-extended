@@ -5,6 +5,7 @@ import { AppContext } from "../contexts/AppContext";
 export default function Login() {
   const app = useContext(AppContext);
 
+  // Note que eu não preciso usar o navigator, pois o Router já troca de Navigator automaticamente
   const handleLogin = () => {
     app.setLoggedIn(true);
   };
